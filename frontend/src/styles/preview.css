@@ -1,0 +1,104 @@
+.preview-scroll {
+  height: 100%;
+  overflow-y: auto;
+  background: #c8c8c8;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.preview-scroll::-webkit-scrollbar { width: 5px; }
+.preview-scroll::-webkit-scrollbar-thumb { background: #aaa; border-radius: 3px; }
+
+.resume-doc {
+  background: #fff;
+  width: 210mm;
+  min-height: 297mm;
+  padding: 12mm 15mm 12mm 15mm;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.18);
+  font-family: Arial, sans-serif;
+  color: #000;
+  font-size: 9.5pt;
+  line-height: 1.35;
+}
+
+.doc-header {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.doc-name {
+  font-size: 18pt;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 3px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+.doc-contact-line {
+  font-size: 9.5pt;
+  color: #000;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 1px;
+  font-family: Arial, sans-serif;
+}
+
+.doc-section {
+  margin-bottom: 0;
+}
+
+.doc-section-title {
+  font-size: 11.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1.5px solid #000;
+  padding-bottom: 1px;
+  margin-bottom: 2px;
+  margin-top: 7px;
+  color: #000;
+  letter-spacing: 0;
+  font-family: Arial, sans-serif;
+}
+
+.doc-body-text {
+  font-size: 9.5pt;
+  line-height: 1.35;
+  color: #000;
+  margin: 0 0 1px 0;
+  font-family: Arial, sans-serif;
+}
+
+.doc-skills-block {
+  margin-bottom: 0;
+}
+
+.doc-exp-block {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.doc-exp-header {
+  font-size: 9.5pt;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 1px 0;
+  color: #000;
+  font-family: Arial, sans-serif;
+}
+
+.doc-bullets {
+  margin: 1px 0 0 13px;
+  padding: 0;
+  list-style: disc;
+}
+
+.doc-bullets li {
+  font-size: 9.5pt;
+  line-height: 1.35;
+  color: #000;
+  margin-bottom: 1.5px;
+  font-family: Arial, sans-serif;
+}
