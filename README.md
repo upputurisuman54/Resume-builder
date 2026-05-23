@@ -1,7 +1,8 @@
 Smart Resume Builder with AI Suggestions 
 
 An AI-powered full-stack resume builder application that helps users create professional resumes with smart content suggestions, skill gap analysis, live preview, and one-click PDF export.
-
+Sign in page:
+![signin page](https://github.com/upputurisuman54/Resume-builder/blob/main/Screenshot%202026-05-23%20213145.png?raw=true)
  Features:
 - JWT Authentication & Role-Based Authorization
 - AI-Powered Resume Content Suggestions
