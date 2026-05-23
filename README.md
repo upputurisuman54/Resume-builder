@@ -10,6 +10,10 @@ Form page:
 
 ![form page](https://github.com/upputurisuman54/Resume-builder/blob/main/Screenshot%202026-05-23%20212957.png?raw=true)
 
+Preview page:
+
+![preview page](https://github.com/upputurisuman54/Resume-builder/blob/main/Screenshot%202026-05-23%20213222.png?raw=true)
+
  Features:
 - JWT Authentication & Role-Based Authorization
 - AI-Powered Resume Content Suggestions
