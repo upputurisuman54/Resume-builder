@@ -109,11 +109,17 @@ Backend runs on:
 
 http://localhost:8080
 3️) Frontend Setup
+
 Navigate to frontend folder
+
 cd frontend
-Install Dependencies
+
+Install Dependencies:
+
 npm install
-Start React Application
+
+Start React Application:
+
 npm start
 
 Frontend runs on:
@@ -121,20 +127,35 @@ Frontend runs on:
 http://localhost:3000
 
  REST API Endpoints
+ 
 Method	Endpoint	Description
+
 POST	/api/auth/register	Register User
+
 POST	/api/auth/login	Login User
+
 GET	/api/resume	Get Resume
+
 POST	/api/resume	Create Resume
+
 PUT	/api/resume/{id}	Update Resume
+
 DELETE	/api/resume/{id}	Delete Resume
- Future Enhancements
+
+ Future Enhancements:
+ 
 Multiple Resume Templates
+
 AI Resume Scoring
+
 ATS Compatibility Checker
+
 Cloud Deployment
+
 Resume Sharing Link
+
 Drag & Drop Resume Sections
+
 Author:
 
 Suman Upputuri
