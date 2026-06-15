@@ -159,7 +159,10 @@ Drag & Drop Resume Sections
 Author:
 
 Suman Upputuri
+Gmail:upputurisuman53@gmail.com
+LinkedIn:www.linkedin.com/in/upputurisuman
 
 
-LinkedIn:
-www.linkedin.com/in/upputuri-suman-a0730726b
+
+
+
