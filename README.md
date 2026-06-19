@@ -1,168 +1,162 @@
-Smart Resume Builder with AI Suggestions 
+# Smart Resume Builder with AI Suggestions
 
-An AI-powered full-stack resume builder application that helps users create professional resumes with smart content suggestions, skill gap analysis, live preview, and one-click PDF export.
+An AI-powered full-stack resume builder that helps users create professional resumes with smart content suggestions, skill gap analysis, live preview, and one-click PDF export.
 
-Sign in page:
+🔗 **Live Demo:** [resume-builder-lilac-mu.vercel.app](https://resume-builder-lilac-mu.vercel.app)
 
-![signin page](https://github.com/upputurisuman54/Resume-builder/blob/main/Screenshot%202026-05-23%20213145.png?raw=true)
+---
 
-Form page:
+## Screenshots
 
-![form page](https://github.com/upputurisuman54/Resume-builder/blob/main/Screenshot%202026-05-23%20212957.png?raw=true)
+| Sign In | Resume Form |
+|--------|-------------|
+| ![Sign In](https://github.com/upputurisuman54/Resume-builder/blob/main/Screenshot%202026-05-23%20213145.png?raw=true) | ![Form](https://github.com/upputurisuman54/Resume-builder/blob/main/Screenshot%202026-05-23%20212957.png?raw=true) |
 
-Preview page:
+| Live Preview | AI Suggestions |
+|-------------|----------------|
+| ![Preview](https://github.com/upputurisuman54/Resume-builder/blob/main/Screenshot%202026-05-23%20213222.png?raw=true) | ![AI](https://github.com/upputurisuman54/Resume-builder/blob/main/Screenshot%202026-05-23%20213043.png?raw=true) |
 
-![preview page](https://github.com/upputurisuman54/Resume-builder/blob/main/Screenshot%202026-05-23%20213222.png?raw=true)
+---
 
-AI Suggestions page:
+## Features
 
-![Ai suggestions](https://github.com/upputurisuman54/Resume-builder/blob/main/Screenshot%202026-05-23%20213043.png?raw=true)
-
- Features:
-- JWT Authentication & Role-Based Authorization
+- JWT Authentication with Role-Based Access Control
 - AI-Powered Resume Content Suggestions
 - Skill Gap Analysis
-- Resume Creation & Management
+- Resume Creation, Editing, and Management
 - Live Resume Preview
 - One-Click PDF Download
 - Responsive React Frontend
 - RESTful API Architecture
-- MySQL Relational Database Integration
-- Spring Security Configuration
-- Tech Stack
-Backend:
-Java
-Spring Boot
-Spring Security
-JWT Authentication
-REST APIs
-Maven
-MySQL
-Frontend:
-React.js
-Axios
-HTML5
-CSS3
-JavaScript
-PDF Generation
-iText PDF
- Project Architecture
-Frontend (React)
-       ↓
-REST APIs
-       ↓
-Spring Boot Backend
-       ↓
+
+---
+
+## Tech Stack
+
+**Backend**
+- Java 17
+- Spring Boot 3
+- Spring Security
+- JWT Authentication
+- Spring Data JPA / Hibernate
+- MySQL
+- Maven
+
+**Frontend**
+- React.js
+- Axios
+- HTML5 / CSS3 / JavaScript
+
+**PDF Generation**
+- OpenHTMLtoPDF
+
+---
+
+## Project Architecture
+
+```
+React Frontend
+      ↓
+REST APIs (Spring Boot)
+      ↓
+Service & Repository Layer
+      ↓
 MySQL Database
+```
 
- Database Design :
+---
 
-The project uses 7 relational tables for managing:
+## Database Design
 
--Users
--Roles
--Resumes
--Education
--Skills
--Experience
--Projects
+The application uses 7 relational tables:
 
- Major Functionalities :
+| Table | Purpose |
+|-------|---------|
+| users | Stores user accounts |
+| roles | Role definitions (USER, ADMIN) |
+| resumes | Resume metadata per user |
+| education | Education section entries |
+| skills | Skills associated with resumes |
+| experience | Work experience entries |
+| projects | Project entries |
 
--Authentication & Security
--User Registration & Login
--JWT Token-Based Authentication
--Role-Based Access Control
--Secure API Endpoints
--Resume Builder
--Add/Edit/Delete Resume Sections
--Dynamic Resume Templates
--Real-Time Preview
--PDF Resume Export
--AI Features
--Resume Content Suggestions
--Skill Recommendations
--Skill Gap Analysis
+---
 
- Installation & Setup
+## Getting Started
 
-1) Clone Repository
+### Prerequisites
+
+- Java 17+
+- Node.js and npm
+- MySQL
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/upputurisuman54/Resume-builder.git
-2️) Backend Setup
-Navigate to backend folder
-cd backend
+cd Resume-builder
+```
 
-Configure MySQL Database
+### 2. Backend Setup
 
-Update application.properties
+Configure your MySQL database in `src/main/resources/application.properties`:
 
+```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/resume_builder
 spring.datasource.username=your_username
 spring.datasource.password=your_password
-
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-Run Spring Boot Application
+```
+
+Run the backend:
+
+```bash
 mvn spring-boot:run
+```
 
-Backend runs on:
+Backend runs on `http://localhost:8080`
 
-http://localhost:8080
-3️) Frontend Setup
+### 3. Frontend Setup
 
-Navigate to frontend folder
-
+```bash
 cd frontend
-
-Install Dependencies:
-
 npm install
-
-Start React Application:
-
 npm start
+```
 
-Frontend runs on:
+Frontend runs on `http://localhost:3000`
 
-http://localhost:3000
+---
 
- REST API Endpoints
- 
-Method	Endpoint	Description
+## API Endpoints
 
-POST	/api/auth/register	Register User
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | /api/auth/register | Register a new user |
+| POST | /api/auth/login | Login and receive JWT |
+| GET | /api/resume | Get user's resume |
+| POST | /api/resume | Create a new resume |
+| PUT | /api/resume/{id} | Update resume |
+| DELETE | /api/resume/{id} | Delete resume |
 
-POST	/api/auth/login	Login User
+---
 
-GET	/api/resume	Get Resume
+## Planned Enhancements
 
-POST	/api/resume	Create Resume
+- Multiple resume templates
+- AI resume scoring
+- ATS compatibility checker
+- Cloud deployment (AWS / Railway)
+- Shareable resume link
+- Drag and drop resume sections
 
-PUT	/api/resume/{id}	Update Resume
+---
 
-DELETE	/api/resume/{id}	Delete Resume
+## Author
 
- Future Enhancements:
- 
-Multiple Resume Templates
+**Upputuri Suman** — Java Full Stack Developer
 
-AI Resume Scoring
-
-ATS Compatibility Checker
-
-Cloud Deployment
-
-Resume Sharing Link
-
-Drag & Drop Resume Sections
-
-Author:
-
-Suman Upputuri
-Gmail:upputurisuman53@gmail.com
-LinkedIn:www.linkedin.com/in/upputurisuman
-
-
-
-
-
+- 📧 [upputurisuman53@gmail.com](mailto:upputurisuman53@gmail.com)
+- 💼 [linkedin.com/in/upputurisuman](https://www.linkedin.com/in/upputurisuman)
+- 🐙 [github.com/upputurisuman54](https://github.com/upputurisuman54)
