@@ -14,7 +14,7 @@ An AI-powered full-stack resume builder that helps users create professional res
 
 | Live Preview | AI Suggestions |
 |-------------|----------------|
-| ![Preview](https://github.com/upputurisuman54/Resume-builder/blob/main/Screenshot%202026-05-23%20213222.png?raw=true) | ![AI](https://github.com/upputurisuman54/Resume-builder/blob/main/Screenshot%202026-05-23%20213043.png?raw=true) |
+| ![Preview]() | ![AI](https://github.com/upputurisuman54/Resume-builder/blob/main/Screenshot/AI%20Suggestions.png?raw=true) |
 
 ---
 
